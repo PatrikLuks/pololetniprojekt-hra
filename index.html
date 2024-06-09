@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STOLNÍ TENNIS</title>
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    #gameContainer { display: flex; flex-direction: column; align-items: center; }
+    canvas { background: #000; display: block; margin: auto; width: 70%; height: 70%; }
+    #newGameBtn { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div id="gameContainer">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+  <button id="newGameBtn">Nová hra</button>
+  <script src="game.js"></script>
+</body>
+</html>
