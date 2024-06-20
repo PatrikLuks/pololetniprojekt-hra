@@ -15,7 +15,7 @@ server.on('connection', (socket) => {
   // Prida noveho hrace do pole hracu
   players.push(socket);
   const playerNumber = players.length; // Cislo hrace
-  socket.send(JSON.stringify({ type: 'init', player: playerNumber })); // Posle zpravu s inicializaci hrace
+  socket.send(JSON.stringify({ type: 'init', player: playerNumber })); // Posle zpravu o hraci
 
   socket.on('message', (message) => {
     const data = JSON.parse(message);
